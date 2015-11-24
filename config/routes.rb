@@ -1,9 +1,13 @@
 Rails.application.routes.draw do
 
+root 'welcome#index'
 
-resources :people do
+resources :people, only: [:new] do
   resources :memories
 end
+
+
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.

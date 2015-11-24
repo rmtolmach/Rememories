@@ -1,0 +1,6 @@
+<h1>Rememories</h1>
+
+<%= form_tag new_person_memory_path(:person_id), method: :get do %>
+  <%= select_tag("Select a Person", options_from_collection_for_select(@people, "id", "name"), prompt: "Choose a Person") %>
+  <%= submit_tag "Add a Memory"%>
+<% end %>
