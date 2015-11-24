@@ -6,6 +6,9 @@ resources :people, only: [:new] do
   resources :memories
 end
 
+resources :memories, only: [:new] do
+  resources :people, only: [:show]
+end
 
 
 
