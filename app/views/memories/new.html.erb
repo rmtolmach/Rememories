@@ -1,1 +1,9 @@
 <h1> Add a Memory for <%= @person.name %> </h1>
+
+<%= form_for @memory, url: {action: "create"}, html: {class: "memory-form"} do |f| %>
+<%= f.label :memory, "Type memory here: " %>
+<%= f.text_area :memory, size: "60x12" %>
+<%= f.label :author, "Your Name: " %>
+<%= f.text_field(:author) %>
+<%= f.submit "Submit memory" %>
+<% end %>
