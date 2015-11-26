@@ -1,23 +1,25 @@
-<h1>Rememories</h1>
+<div class="center_body">
+  <h1>Rememories</h1>
 
-<h2>Write down a memory for:</h2>
+  <h2>Write down a memory for:</h2>
 
-  <ul>
-    <% @people.each do |person| %>
-    <li>
-    <%= link_to "#{person.name}", new_person_memory_path("#{person.id}")%>
-    </li>
-    <% end %>
-  </ul>
+    <ul>
+      <% @people.each do |person| %>
+      <li>
+      <%= link_to "#{person.name}", new_person_memory_path("#{person.id}") %>
+      </li>
+      <% end %>
+    </ul>
 
-<h2>See all memories for:</h2>
+  <h2>See all memories for:</h2>
 
-  <ul>
-    <% @people.each do |person| %>
-    <li>
-    <%= link_to "#{person.name}"%>
-    </li>
-    <% end %>
-  </ul>
+    <ul>
+      <% @people.each do |person| %>
+      <li>
+      <%= link_to "#{person.name}", person_memory_path("#{person.id}", "#{person.id}") %>
+      </li>
+      <% end %>
+    </ul>
 
-<%= link_to "Add a Person", new_person_path %>
+  <%= link_to "Add a Person", new_person_path %>
+</div>

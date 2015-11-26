@@ -1,3 +1,33 @@
+body {
+  background-color: #a5be48;
+  max-width: 960px;
+  margin: 0 auto;
+  width: 50%;
+  padding-left: 30%;
+  color: navy;
+  font-family: helvetica;
+
+}
+
+h1 {
+  font-size: 3.5em;
+}
+
+a {
+  text-decoration: none;
+  color: navy;
+}
+
+a:hover {
+  color: gold;
+}
+
+ul {
+  list-style: none;
+  font-size: 1.5em;
+  line-height: 2em;
+  margin-left: -1.6em;
+}
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.

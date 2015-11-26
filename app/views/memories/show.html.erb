@@ -1,7 +1,9 @@
 <h1>this works!</h1>
 
-<% @memory.each do |memory| %>
-  <% if memory.person_id.to_s == params[:person_id] %>
-    <%= memory.memory %>
+<ul>
+  <% @memory.each do |memory| %>
+    <% if memory.person_id.to_s == params[:person_id] %>
+      <li> <%= memory.memory %> </li>
+    <% end %>
   <% end %>
-<% end %>
+</ul>
