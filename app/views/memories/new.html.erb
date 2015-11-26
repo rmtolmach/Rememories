@@ -8,8 +8,7 @@
 <%= f.label :author, "Your Name: " %>
 <%= f.text_field(:author) %>
 
-<%= f.hidden_field :person_id %>
-<%= hidden_field_tag 'person_id', @person.id %>
+<%= f.hidden_field :person_id, value: @person.id %>
 
 <%= f.submit "Submit memory" %>
 <% end %>

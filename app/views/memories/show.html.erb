@@ -3,7 +3,7 @@
 <ul>
   <% @memory.each do |memory| %>
     <% if memory.person_id.to_s == params[:person_id] %>
-      <li> <%= memory.memory %> </li>
+      <li> <%= memory.memory %> <p> Remembered by <%= memory.author %> </p> </li>
     <% end %>
   <% end %>
 </ul>
