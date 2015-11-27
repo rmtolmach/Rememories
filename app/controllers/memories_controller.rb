@@ -25,6 +25,11 @@ class MemoriesController < ApplicationController
     redirect_to person_memory_path(params[:person_id], [:id])
   end
 
+  def destroy
+    Memory.destroy(params[:id])
+    redirect_to person_memory_path(params[:person_id], [:id])
+  end
+
 ################ PRIVADO! #################
  def memory_params
    params.require(:memory).permit(:memory, :author, :person_id)
