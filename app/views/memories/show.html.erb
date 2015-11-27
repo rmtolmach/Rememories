@@ -3,10 +3,13 @@
 <ul>
   <% @memory.each do |memory| %>
     <% if memory.person_id.to_s == params[:person_id] %>
-      <li> <%= memory.memory %> <p class="memory-author"> Remembered by <%= memory.author %> </p> </li>
+      <li> <%= memory.memory %>
+        <p class="memory-author"> Remembered by <%= memory.author %> </p>
+        <p class="edit-delete"><%= link_to "Edit", edit_person_memory_path("#{memory.person_id}", "#{memory.id}") %></p> </li>
+
     <% end %>
   <% end %>
 
-  <%= link_to "add another memory", new_person_memory_path %><br>
+  <%= link_to "add a memory", new_person_memory_path %><br>
   <%= link_to "Home", root_path %>
 </ul>
