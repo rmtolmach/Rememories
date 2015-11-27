@@ -1,6 +1,5 @@
 class MemoriesController < ApplicationController
   def new
-    @people = Person.all
     @person = Person.find(params[:person_id])
     @memory = Memory.new
   end
@@ -12,6 +11,7 @@ class MemoriesController < ApplicationController
 
   def show
     @memory = Memory.all
+    @person = Person.find(params[:person_id])
   end
 
 ################ PRIVADO! #################

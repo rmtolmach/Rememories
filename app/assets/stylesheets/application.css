@@ -3,7 +3,7 @@ body {
   max-width: 960px;
   margin: 0 auto;
   width: 50%;
-  padding-left: 30%;
+  text-align: center;
   color: navy;
   font-family: helvetica;
 
@@ -22,12 +22,35 @@ a:hover {
   color: gold;
 }
 
+li {
+  list-style: none;
+  font-size: 1.5em;
+  line-height: 2em;
+  margin-left: -1.6em;
+  text-align: center;
+}
+
 ul {
   list-style: none;
   font-size: 1.5em;
   line-height: 2em;
   margin-left: -1.6em;
+  margin-bottom: 3em;
+  text-align: left;
 }
+
+
+
+/*show page for memories*/
+.memory-author {
+  margin-top: 0px;
+  margin-bottom: 2.5em;
+  font-size: .8em;
+  color: antiquewhite;
+}
+
+
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.

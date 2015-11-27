@@ -1,9 +1,12 @@
-<h1>this works!</h1>
+<h1>Memories of <%= @person.name %></h1>
 
 <ul>
   <% @memory.each do |memory| %>
     <% if memory.person_id.to_s == params[:person_id] %>
-      <li> <%= memory.memory %> <p> Remembered by <%= memory.author %> </p> </li>
+      <li> <%= memory.memory %> <p class="memory-author"> Remembered by <%= memory.author %> </p> </li>
     <% end %>
   <% end %>
+
+  <%= link_to "add another memory", new_person_memory_path %><br>
+  <%= link_to "Home", root_path %>
 </ul>

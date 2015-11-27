@@ -3,7 +3,7 @@
 
   <h2>Write down a memory for:</h2>
 
-    <ul>
+    <ul class="homepage-list">
       <% @people.each do |person| %>
       <li>
       <%= link_to "#{person.name}", new_person_memory_path("#{person.id}") %>
@@ -13,7 +13,7 @@
 
   <h2>See all memories for:</h2>
 
-    <ul>
+    <ul class="homepage-list">
       <% @people.each do |person| %>
       <li>
       <%= link_to "#{person.name}", person_memory_path("#{person.id}", "#{person.id}") %>
