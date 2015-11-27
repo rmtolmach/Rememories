@@ -15,7 +15,7 @@ class MemoriesController < ApplicationController
   end
 
   def edit
-    @memory = Memory.find(params[:person_id])
+    @memory = Memory.find(params[:id])
     @person = Person.find(params[:person_id])
   end
 
