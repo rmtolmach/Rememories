@@ -1,4 +1,11 @@
 class MemoriesController < ApplicationController
+
+  def index
+    @memory = Memory.all
+    @person = Person.find(params[:person_id])
+    render :show
+  end
+
   def new
     @person = Person.find(params[:person_id])
     @memory = Memory.new

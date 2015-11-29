@@ -7,10 +7,10 @@
         <p class="memory-author"> Remembered by <%= memory.author %> </p>
         <p class="edit-delete"><%= link_to "Edit", edit_person_memory_path("#{memory.person_id}", "#{memory.id}") %>
         <%= link_to "Delete", person_memory_path("#{memory.person_id}", "#{memory.id}"), :method => :delete, :data => {:confirm => "You sure you want to delete this memory?"} %></p> </li>
-
     <% end %>
   <% end %>
 
-  <%= link_to "add a memory", new_person_memory_path %><br>
+  <%= link_to "Delete Person", person_path(params[:person_id]), method: :delete, onclick: "return confirm('You sure??')"  %>
+  <%= link_to "Add a memory", new_person_memory_path %><br>
   <%= link_to "Home", root_path %>
 </ul>

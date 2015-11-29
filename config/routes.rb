@@ -2,13 +2,15 @@ Rails.application.routes.draw do
 
 root 'welcome#index'
 
-resources :people, only: [:new, :create] do
-  resources :memories
+resources :people do
+  resources :memories do
+  end
 end
 
-resources :memories, only: [:new] do
-  resources :people, only: [:show]
-end
+# , only: [:new, :create]
+# resources :memories, only: [:new] do
+#   resources :people, only: [:show, :destroy]
+# end
 
 
 

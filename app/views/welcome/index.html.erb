@@ -16,7 +16,7 @@
     <ul class="homepage-list">
       <% @people.each do |person| %>
       <li>
-      <%= link_to "#{person.name}", person_memory_path("#{person.id}", "#{person.id}") %>
+      <%= link_to "#{person.name}", person_memories_path("#{person.id}") %>
       </li>
       <% end %>
     </ul>

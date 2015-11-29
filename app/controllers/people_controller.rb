@@ -9,6 +9,11 @@ class PeopleController < ApplicationController
     redirect_to root_path
   end
 
+  def destroy
+    Person.destroy(params[:id])
+    redirect_to root_path
+  end
+
 ###########PRIVADO###############
   private
 
