@@ -10,7 +10,11 @@
     <% end %>
   <% end %>
 
-  <%= link_to "Delete Person", person_path(params[:person_id]), method: :delete, onclick: "return confirm('You sure??')"  %>
-  <%= link_to "Add a memory", new_person_memory_path %><br>
-  <%= link_to "Home", root_path %>
+  <footer>
+    <ul class="footer">
+      <li><%= link_to "Home", root_path, class: "home" %></li>
+      <li><%= link_to "Delete Person", person_path(params[:person_id]), method: :delete, onclick: "return confirm('You sure??')"  %></li>
+      <li><%= link_to "Add a memory", new_person_memory_path %><br></li>
+    </ul>
+  </footer>
 </ul>
