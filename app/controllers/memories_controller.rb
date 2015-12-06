@@ -38,6 +38,8 @@ class MemoriesController < ApplicationController
   end
 
 ################ PRIVADO! #################
+private
+
  def memory_params
    params.require(:memory).permit(:memory, :author, :person_id)
  end
