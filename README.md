@@ -1,19 +1,11 @@
 # Rememories
-A place to collectively store memories of people who have passed away.
+An web application to collectively store memories of people who have passed away. Users can add people and then write down memories for them. All memories written by all users are displayed for each person. Users can edit and delete memories. 
 
 #### Ruby version
 - using Ruby version 2.2.3
 
-#### System dependencies
+#### Rails version
+- 4.2.5
 
-#### Configuration
-
-#### Database creation
-
-#### Database initialization
-
-#### How to run the test suite
-
-#### Services (job queues, cache servers, search engines, etc.)
-
-#### Deployment instructions
+#### Deployed on Heroku
+http://rememories.herokuapp.com/
