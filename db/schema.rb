@@ -11,14 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151122214621) do
+ActiveRecord::Schema.define(version: 20151215050717) do
 
   create_table "memories", force: :cascade do |t|
-    t.text     "memory"
+    t.text     "description"
     t.string   "author"
     t.integer  "person_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "people", force: :cascade do |t|

@@ -9,9 +9,9 @@ people.each do |person|
 end
 
 memories = [
-  { memory: "Playing Catan with Joey and fam over Christmas", person_id: 1, author: "Becca" },
-  { memory: "Drinking wine and eating bon bons", person_id: 2, author: "Becca" },
-  { memory: "Hoppin' John at their New Years Day party", person_id: 3, author: "Becca" }
+  { description: "Playing Catan with Joey and fam over Christmas", person_id: 1, author: "Becca" },
+  { description: "Drinking wine and eating bon bons", person_id: 2, author: "Becca" },
+  { description: "Hoppin' John at their New Years Day party", person_id: 3, author: "Becca" }
 ]
 
 memories.each do |memory|

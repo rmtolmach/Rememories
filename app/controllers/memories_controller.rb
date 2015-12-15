@@ -1,13 +1,14 @@
 class MemoriesController < ApplicationController
 
+  before_action :find_person, only:[:index, :new, :show, :edit]
+  before_action :find_memory, only:[:update, :edit]
+
   def index
     @memory = Memory.all
-    @person = Person.find(params[:person_id])
     render :show
   end
 
   def new
-    @person = Person.find(params[:person_id])
     @memory = Memory.new
   end
 
@@ -18,17 +19,13 @@ class MemoriesController < ApplicationController
 
   def show
     @memory = Memory.all
-    @person = Person.find(params[:person_id])
   end
 
   def edit
-    @memory = Memory.find(params[:id])
-    @person = Person.find(params[:person_id])
   end
 
   def update
-    memory = Memory.find(params[:id])
-    memory.update_attributes(memory_params)
+    @memory.update_attributes(memory_params)
     redirect_to person_memory_path(params[:person_id], [:id])
   end
 
@@ -37,11 +34,19 @@ class MemoriesController < ApplicationController
     redirect_to person_memory_path(params[:person_id], [:id])
   end
 
+  def find_person
+    @person = Person.find(params[:person_id])
+  end
+
+  def find_memory
+    @memory = Memory.find(params[:id])
+  end
+
 ################ PRIVADO! #################
 private
 
  def memory_params
-   params.require(:memory).permit(:memory, :author, :person_id)
+   params.require(:memory).permit(:description, :author, :person_id)
  end
 
 

@@ -1,8 +1,8 @@
 <h1> Add a Memory for <%= @person.name %> </h1>
 
-<%= form_for @memory, url: {action: "create"}, html: {class: "memory-form"} do |f| %>
-<%= f.label :memory, "Type memory here: " %>
-<%= f.text_area :memory, size: "60x8" %>
+<%= form_for @memory, url: {action: "create"}, html: {class: "form-group"} do |f| %>
+<%= f.label :description, "Type memory here: " %>
+<%= f.text_area :description, size: "60x8" %>
 
 <br>
 <%= f.label :author, "Your Name: " %>
@@ -10,5 +10,5 @@
 
 <%= f.hidden_field :person_id, value: @person.id %>
 
-<%= f.submit "Submit memory" %>
+<%= f.submit "Submit memory", class: "btn btn-submit" %>
 <% end %>
