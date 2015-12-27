@@ -23,7 +23,7 @@ RSpec.describe PeopleController, type: :controller do
 
   describe "POST 'create'" do
     it "successfully creates a person" do
-      expect(Person.all.length). to eq 0
+      expect(Person.all.length).to eq 0
       post :create, person_params
       expect(Person.all.length).to eq 1
     end
@@ -36,6 +36,11 @@ RSpec.describe PeopleController, type: :controller do
   describe "DELETE 'destroy'" do
     before :each do
       post :create, person_params
+    end
+    it "successfully deletes person" do
+      expect(Person.all.length).to eq 1
+      delete :destroy, id: 1
+      expect(Person.all.length).to eq 0
     end
     it "redirects to the root path" do
       delete :destroy, id: 1

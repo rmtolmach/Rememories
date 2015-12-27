@@ -1,0 +1,128 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/Brittany/Desktop/git/projects/Ada/project-forks/Rememories/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/Brittany/Desktop/git/projects/Ada/project-forks/Rememories/app/helpers/memories_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/Brittany/Desktop/git/projects/Ada/project-forks/Rememories/app/helpers/people_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/Brittany/Desktop/git/projects/Ada/project-forks/Rememories/app/helpers/welcome_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/Brittany/Desktop/git/projects/Ada/project-forks/Rememories/app/controllers/people_controller.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        4,
+        4,
+        null,
+        null,
+        1,
+        2,
+        2,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        4,
+        null,
+        null,
+        null
+      ],
+      "/Users/Brittany/Desktop/git/projects/Ada/project-forks/Rememories/app/controllers/application_controller.rb": [
+        1,
+        null,
+        null,
+        1,
+        null
+      ],
+      "/Users/Brittany/Desktop/git/projects/Ada/project-forks/Rememories/app/models/person.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/Brittany/Desktop/git/projects/Ada/project-forks/Rememories/app/controllers/memories_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/Brittany/Desktop/git/projects/Ada/project-forks/Rememories/app/controllers/welcome_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/Brittany/Desktop/git/projects/Ada/project-forks/Rememories/app/models/memory.rb": [
+        0,
+        0,
+        0
+      ]
+    },
+    "timestamp": 1451177620
+  }
+}
