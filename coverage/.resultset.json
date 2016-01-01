@@ -1,0 +1,139 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/katherinedefliese/Documents/Ada_homework/break-projects/Rememories/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/katherinedefliese/Documents/Ada_homework/break-projects/Rememories/app/helpers/memories_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/katherinedefliese/Documents/Ada_homework/break-projects/Rememories/app/helpers/people_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/katherinedefliese/Documents/Ada_homework/break-projects/Rememories/app/helpers/welcome_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/katherinedefliese/Documents/Ada_homework/break-projects/Rememories/app/models/memory.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/katherinedefliese/Documents/Ada_homework/break-projects/Rememories/app/controllers/application_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/katherinedefliese/Documents/Ada_homework/break-projects/Rememories/app/controllers/memories_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/katherinedefliese/Documents/Ada_homework/break-projects/Rememories/app/controllers/people_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/katherinedefliese/Documents/Ada_homework/break-projects/Rememories/app/controllers/welcome_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/katherinedefliese/Documents/Ada_homework/break-projects/Rememories/app/models/person.rb": [
+        0,
+        0,
+        0
+      ]
+    },
+    "timestamp": 1451688955
+  }
+}
