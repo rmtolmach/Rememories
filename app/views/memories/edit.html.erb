@@ -1,4 +1,11 @@
 <h1> Edit this memory </h1>
+<% if !@memory.errors.empty? %>
+  <% @memory.errors.each do |column, message| %>
+      <strong><%= column.capitalize %></strong>: <%= message %>
+      <br />
+  <% end %>
+  <br />
+<% end %>
 
 <%= form_for @memory, url: person_memory_path("#{@memory.person_id}", "#{@memory.id}"), html: {method: "patch", class: "memory-form"} do |f| %>
   <%= f.label :description, "Type memory here: " %>
