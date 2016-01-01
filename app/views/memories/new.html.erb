@@ -1,4 +1,9 @@
 <h1> Add a Memory for <%= @person.name %> </h1>
+<% if !@memory.errors.empty? %>
+  <% @memory.errors.each do |column, message| %>
+    <strong><%= column.capitalize %></strong>: <%= message %>
+  <% end %>
+<% end %>
 
 <%= form_for @memory, url: {action: "create"}, html: {class: "form-group"} do |f| %>
 <%= f.label :description, "Type memory here: " %>
