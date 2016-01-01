@@ -2,11 +2,11 @@
 
 <%= form_for @memory, url: {action: "create"}, html: {class: "form-group"} do |f| %>
 <%= f.label :description, "Type memory here: " %>
-<%= f.text_area :description, size: "60x8" %>
+<%= f.text_area :description, size: "60x8", :required => true %>
 
 <br>
 <%= f.label :author, "Your Name: " %>
-<%= f.text_field(:author) %>
+<%= f.text_field :author, :required => true %>
 
 <%= f.hidden_field :person_id, value: @person.id %>
 

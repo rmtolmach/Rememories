@@ -2,10 +2,10 @@
 
 <%= form_for @memory, url: person_memory_path("#{@memory.person_id}", "#{@memory.id}"), html: {method: "patch", class: "memory-form"} do |f| %>
   <%= f.label :description, "Type memory here: " %>
-  <%= f.text_area :description, size: "60x12" %>
+  <%= f.text_area :description, size: "60x12", :required => true %>
   <br>
   <%= f.label :author, "Your Name: " %>
-  <%= f.text_field(:author) %>
+  <%= f.text_field :author, :required => true %>
 
   <%= f.hidden_field :person_id, value: @person.id %>
 
