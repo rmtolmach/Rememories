@@ -13,8 +13,13 @@ class MemoriesController < ApplicationController
   end
 
   def create
-    Memory.create(memory_params)
-    redirect_to person_memory_path(params[:person_id], [:id])
+    @memory = Memory.new(memory_params)
+    if @memory.save
+      redirect_to person_memory_path(params[:person_id], [:id])
+    else
+      @person = Person.find(params[:person_id])
+      render :new
+    end
   end
 
   def show
@@ -25,8 +30,13 @@ class MemoriesController < ApplicationController
   end
 
   def update
-    @memory.update_attributes(memory_params)
-    redirect_to person_memory_path(params[:person_id], [:id])
+    @memory = Memory.update(params[:id], memory_params)
+    if @memory.save
+      redirect_to person_memory_path(params[:person_id], [:id])
+    else
+      @person = Person.find(params[:person_id])
+      render :edit
+    end
   end
 
   def destroy
