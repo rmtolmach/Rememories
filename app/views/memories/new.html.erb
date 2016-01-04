@@ -1,12 +1,19 @@
 <h1> Add a Memory for <%= @person.name %> </h1>
+<% if !@memory.errors.empty? %>
+  <% @memory.errors.each do |column, message| %>
+      <strong><%= column.capitalize %></strong>: <%= message %>
+      <br />
+  <% end %>
+  <br />
+<% end %>
 
 <%= form_for @memory, url: {action: "create"}, html: {class: "form-group"} do |f| %>
 <%= f.label :description, "Type memory here: " %>
-<%= f.text_area :description, size: "60x8" %>
+<%= f.text_area :description, size: "60x8", :required => true %>
 
 <br>
 <%= f.label :author, "Your Name: " %>
-<%= f.text_field(:author) %>
+<%= f.text_field :author, :required => true %>
 
 <%= f.hidden_field :person_id, value: @person.id %>
 
