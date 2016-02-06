@@ -5,8 +5,14 @@ class PeopleController < ApplicationController
   end
 
   def create
-    Person.create(person_params)
-    redirect_to root_path
+    @person = Person.new(person_params)
+    if @person.save
+      flash[:success] = "This person has been added"
+      redirect_to root_path
+    else
+      flash[:warning] = "The person was not added"
+      render 'new'
+    end
   end
 
   def destroy
